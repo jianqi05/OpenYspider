@@ -129,7 +129,7 @@ public class LeetcodeScannerService implements ILeetcodeScannerService {
 
     @Override
     public String doScanProblemsDetail() {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/DEVYY/Documents/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe");
         WebDriver webDriver = new ChromeDriver();
         // 设置超时时间为 10 s
         webDriver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
@@ -203,7 +203,7 @@ public class LeetcodeScannerService implements ILeetcodeScannerService {
 
     @Override
     public String doTestVuePressBugs() {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/DEVYY/Documents/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe");
         WebDriver webDriver = new ChromeDriver();
         // 设置超时时间为 10 s
         webDriver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);

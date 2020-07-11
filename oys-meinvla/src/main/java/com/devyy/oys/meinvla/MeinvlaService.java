@@ -36,7 +36,7 @@ public class MeinvlaService implements IMeinvlaService {
      */
     private static final Pattern FILE_PATTERN = Pattern.compile("[\\\\/:*?\"<>|\\[\\]_]");
 
-    private static final String MEINVLA_LOCAL_PREFIX = "D:/Meinvla爬虫/";
+    private static final String MEINVLA_LOCAL_PREFIX = "E:/乱七八糟/projecttestfile/Meinvla";
 
     @Autowired
     private IMeinvlaAlbumMapper meinvlaAlbumMapper;
@@ -127,7 +127,7 @@ public class MeinvlaService implements IMeinvlaService {
     @Override
     public String doScanImages() {
         // 配置 chromedriver.exe 路径
-        System.setProperty("webdriver.chrome.driver", "C:/Users/DEVYY/Documents/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe");
         // Mac 用户
         // todo 这些配置，最好放到application.properties文件里
         // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
@@ -324,7 +324,7 @@ public class MeinvlaService implements IMeinvlaService {
     @Override
     public String doScanVideo() {
         // 配置 chromedriver.exe 路径
-        System.setProperty("webdriver.chrome.driver", "C:/Users/DEVYY/Documents/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe");
         // Mac 用户
         // todo 这些配置，最好放到application.properties文件里
         // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
